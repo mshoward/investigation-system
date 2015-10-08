@@ -1,0 +1,1085 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+
+    <title>Case Intake Form</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.minC.css" rel="stylesheet">
+    <!-- Bootstrap theme -->
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+
+    <!-- Custom styles for frills -->
+    <link href="css/theme.css" rel="stylesheet">
+     <!-- Custom styles for sticky footer -->
+    <link href="css/stickyFooter.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+  </head>
+
+<body role="document">
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+         <img src="graphics/TNElderLogo.jpg" height="50px" align="left"> <a class="navbar-brand" href="index.html">&nbsp;AARON Investigation</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li class="dropdown" class="active">
+              <a href="services.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="services.html#Background">Background Checks</a></li>
+                    <li><a href="services.html#Surveillance">Surveillance</a></li>
+                    <li><a href="services.html#QualityOfLife">Quality Of Life And Home Assessment</a></li>
+                <li role="separator" class="divider"></li>
+                <li class="dropdown-header">Other Links</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container theme-showcase" role="main">
+
+      <!-- Main jumbotron for a primary marketing message or call to action -->
+      <div class="jumbotron"><a name="Background"></a>
+        <h1></h1>
+        <div class="container">
+  <h2>Case Intake Form</h2>
+  <p>Blurb about how even though this is a giant, man-eating form, it's really useful and we need the client to fill out as much information as possible.  Inlude story about client with mom</p>
+ <p>Client Information</p>   
+<form role="form" class="form-horizontal"mmethod="POST" id="msgform">
+
+  	 <div class="col-xs-4">
+    	<label for="createDate">Today's Date:</label>
+        <input type="date" class="form-control" id="createDate" name="case create date">
+    </div>
+
+  	 <div class="col-xs-4">
+    	<label for="survDate">Date of Contract:</label>
+        <input type="date" class="form-control" id="survDate" name="contract date">
+    </div><br /><br /><br />
+
+    <div class="col-xs-4">
+      	<label for="clientFName">First Name:</label>
+      	<input type="name" class="form-control" id="name"  name="client last name" placeholder="Ex. John">
+      </div>
+      
+      <div class="col-xs-4">
+      	<label for="clientLName">Last Name:</label>
+      	<input type="name" class="form-control" id="name"  name="client last name" placeholder="Ex. Doe">
+    </div>
+    <br /><br /><br />
+    <div class="col-xs-4">
+    	<label for="clientHomePhone">Home Phone:</label>
+        <input type="tel" class="form-control" id="clientHomePhone" name="client home phone" placeholder="1-615-555-5555">
+    </div>
+     <div class="col-xs-4">
+    	<label for="clientHomePhone">Cell Phone:</label>
+        <input type="tel" class="form-control" id="clientCellPhone" name="client home phone" placeholder="1-615-555-5555">
+    </div><br /><br /><br />
+     <div class="col-xs-4">
+    	<label for="clientHomePhone">Work Phone:</label>
+        <input type="tel" class="form-control" id="clientWorkPhone" name="client home phone" placeholder="1-615-555-5555">
+    </div>
+    <div class="col-xs-4">
+    	<label for="timeToCall">Best Time To Call:</label>
+        <input type="text" class="form-control" id="timeToCall" name="client best time to call">
+    </div>
+    <br /><br /><br />
+    
+    <div class="col-xs-4">
+        <label for="email">Email:</label>
+      	<input type="email" class="form-control" id="email" name="email" placeholder="Ex. john.doe@gmail.com">
+    </div>
+    
+    <div class="col-xs-4">
+    	<label for="attorney_name">Attorney Name (If applicable):</label>
+        <input type="name" class="form-control" id="attorney_name">
+    </div><br /><br /><br />
+     <div class="col-xs-4">
+    	<label for="attnyPhone">Attorney Phone:</label>
+        <input type="tel" class="form-control" id="attnyPhone" name="attorney phone number" placeholder="1-615-555-5555">
+    </div><br /><br /><br /><br />
+    
+    <label>Type of Case</label>
+    <span class="help-block">Check all that apply</span>
+    <div class="checkbox">
+    	<label><input type="checkbox" value="">Divorce</label>
+        <label><input type="checkbox" value="">Child Custody</label>
+        <label><input type="checkbox" value="">Infidelity</label>
+        <label><input type="checkbox" value="">Surveillance</label>
+        <label><input type="checkbox" value="">Missing Person</label>
+        <label><input type="checkbox" value="">Locate/Skip</label>
+        <label><input type="checkbox" value="">Research</label>
+        <label><input type="checkbox" value="">Civil Records</label>
+        <label><input type="checkbox" value="">Criminal Records</label>
+        <label><input type="checkbox" value="">Asset Verification</label>
+        <label><input type="checkbox" value="">Elder Care Assessment</label>
+        <label><input type="checkbox" value="">Document Retrieval</label>
+        <label><input type="checkbox" value="">Computer Analysis</label>
+        <label><input type="checkbox" value="">Workers Compensation</label>
+        <label><input type="checkbox" value="">Alcohol/Drug Abuse</label>
+        <label><input type="checkbox" value="">Fraud/Theft</label>
+        <label><input type="checkbox" value="">Work Place</label>
+        <label><input type="checkbox" value="">Serve Papers</label><br />
+        <label><input type="checkbox" value="">Other: Please Specify</label><br />
+        <div class="col-xs-4">
+  		<input class="form-control" id="otherCasetype" type="text">
+		</div>
+     </div>
+     
+       <label>Type of Payment</label>
+    <div class="radio">
+     	<label><input type="radio" name="payment" value="payCs">Cash</label>
+     	<label><input type="radio" name="payment" value="payCk">Check</label>
+        <label><input type="radio" name="payment" value="payCC">Credit Card</label>
+         <label><input type="radio" name="payment" value="payPP">PayPal</label>      
+    </div>
+     
+  <!--need case number--> 
+    
+     <br /><br />
+  	 <div class="col-xs-4">
+    	<label for="survDate">Surveillance Date:</label>
+        <input type="date" class="form-control" id="survDate" name="surveillance date">
+    </div>
+    
+    <div class="col-xs-4">
+    	<label for="survTime">Surveillance Time:</label>
+        <input type="time" class="form-control" id="survTime" name="surveillance time">
+    </div>
+    
+    <div class="col-xs-4">
+    	<label for"survLocat">Start Location:</label>
+        <input type="text" class="form-control" id="survLocat" name="surveillance location">
+     </div>
+     
+      <div class="form-group">
+    	<label for"bePrepared">Be Prepared For:</label>
+        <input type="text" class="form-control" id="bePrepared" name="be prepared for">
+     </div>
+     
+     <div class="form-group">
+    	<label for"objective">Objective:</label>
+        <input type="text" class="form-control" id="objective" name="objective">
+     </div>
+     
+     <div class="form-group">
+    	<label for"bring">Bring:</label>
+        <input type="text" class="form-control" id="bring" name="bring">
+     </div>
+    
+ <!--Also, investigators, presurveillance notes; Begin subject-->
+ 
+ <p>Primary Subject</p>
+ 	<div class="col-xs-4">
+    	<label for="subFname">Subject First Name:</label>
+        <input type="name" class="form-control" id="subFname" name="subject first name">
+    </div>
+    <div class="col-xs-4">
+    	<label for="subLname">Subject Last Name:</label>
+        <input type="name" class="form-control" id="subLname" name="subject last name">
+    </div><br /><br /><br /><br />
+  	 <div class="col-xs-4">
+    	<label for="subDOB">Subject Date of Birth:</label>
+        <input type="date" class="form-control" id="subDOB" name="subject DOB"><br />
+    </div>
+    <div class="col-xs-4">
+    	<label for"subssn">Subject Social Security Number (if known)</label>
+        <input type="number" class="form-control" id="subssn" name="subssn">
+    </div><br /><br /><br /><br />
+      <label>Type of Residence:</label>
+    <span class="help-block">Check all that apply</span>
+    <div class="checkbox">
+    	<label><input type="checkbox" value="">Condo</label>
+        <label><input type="checkbox" value="">House</label>
+        <label><input type="checkbox" value="">City</label>
+        <label><input type="checkbox" value="">Rural</label>
+        <label><input type="checkbox" value="">Culdesac</label>
+        <label><input type="checkbox" value="">Apartment</label>
+        <label><input type="checkbox" value="">Gated</label>
+     	<br />
+        <label><input type="checkbox" value="">Other: Please Specify</label><br />
+        <div class="col-xs-4">
+  		<input class="form-control" id="otherCasetype" type="text">
+		</div>
+     </div><br><br>
+ 	<div class="form-group">
+    	<label for="subAdd1">Subject Address Line 1:</label>
+        <input type="text" class="form-control" id="subAdd1" name="subject address line 2">
+    </div>
+    <div class="form-group">
+    	<label for="subAdd2">Subject Address Line 2:</label>
+        <input type="text" class="form-control" id="subAdd2" name="subject address line 2">
+    </div>
+    <div class="col-xs-4">
+    	<label for="subCity">Subject City:</label>
+        <input type="text" class="form-control" id="subCity" name="subject city">
+    </div>
+    <div class="col-xs-4">
+    	<label for"subZip">Subject Zip Code</label>
+        <input type="number" class="form-control" id="subZip" name="subject zip code">
+    </div>
+    
+<!--state picker!-->
+
+ <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <label for="subState">Subject State:</label><br/>
+        <select name="subject state" class="form-control" id="subState">
+            <option value="AL">AL</option>
+            <option value="AK">AK</option>
+            <option value="AZ">AZ</option>
+            <option value="AR">AR</option>
+            <option value="CA">CA</option>
+            <option value="CO">CO</option>
+            <option value="CT">CT</option>
+            <option value="DE">DE</option>
+            <option value="DC">DC</option>
+            <option value="FL">FL</option>
+            <option value="GA">GA</option>
+            <option value="HI">HI</option>
+            <option value="ID">ID</option>
+            <option value="IL">IL</option>
+            <option value="IN">IN</option>
+            <option value="IA">IA</option>
+            <option value="KS">KS</option>
+            <option value="KY">KY</option>
+            <option value="LA">LA</option>
+            <option value="ME">ME</option>
+            <option value="MD">MD</option>
+            <option value="MA">MA</option>
+            <option value="MI">MI</option>
+            <option value="MN">MN</option>
+            <option value="MS">MS</option>
+            <option value="MO">MO</option>
+            <option value="MT">MT</option>
+            <option value="NE">NE</option>
+            <option value="NV">NV</option>
+            <option value="NH">NH</option>
+            <option value="NJ">NJ</option>
+            <option value="NM">NM</option>
+            <option value="NY">NY</option>
+            <option value="NC">NC</option>
+            <option value="ND">ND</option>
+            <option value="OH">OH</option>
+            <option value="OK">OK</option>
+            <option value="OR">OR</option>
+            <option value="PA">PA</option>
+            <option value="RI">RI</option>
+            <option value="SC">SC</option>
+            <option value="SD">SD</option>
+            <option value="TN">TN</option>
+            <option value="TX">TX</option>
+            <option value="UT">UT</option>
+            <option value="VT">VT</option>
+            <option value="VA">VA</option>
+            <option value="WA">WA</option>
+            <option value="WV">WV</option>
+            <option value="WI">WI</option>
+            <option value="WY">WY</option>
+        </select>
+        </div><br><br><br><br><br /><br />
+   
+   <div class="col-xs-4">
+   		<label for="subWork">Subject Employer</label> 
+        <input type="name" class="form-control" id="subWork" mame="subject employer">
+   </div>  
+   <div class="col-xs-4">
+   		<label for="subBoss">Subject Boss Name (if known)</label> 
+        <input type="name" class="form-control" id="subBoss" mame="subject boss name">
+   </div><br /><br /><br /><br />   
+ 	<div class="form-group">
+    	<label for="subWorkAdd1">Subject Work Address Line 1:</label>
+        <input type="text" class="form-control" id="subWorkAdd1" name="subject work address line 2">
+    </div>
+    <div class="form-group">
+    	<label for="subWorkAdd2">Subject Work Address Line 2:</label>
+        <input type="text" class="form-control" id="subWorkAdd2" name="subject work address line 2">
+    </div>
+    <div class="col-xs-4">
+    	<label for="subWorkCity">Subject Work City:</label>
+        <input type="text" class="form-control" id="subWorkCity" name="subject work city">
+    </div>
+    <div class="col-xs-4">
+    	<label for"subWorkZip">Subject Work Zip Code</label>
+        <input type="number" class="form-control" id="subWorkZip" name="subject work zip code">
+    </div>
+    
+<!--state picker!-->
+
+ <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <label for="subWorkState">Subject Work State:</label><br/>
+        <select name="subject work state" class="form-control" id="subWorkState">
+            <option value="AL">AL</option>
+            <option value="AK">AK</option>
+            <option value="AZ">AZ</option>
+            <option value="AR">AR</option>
+            <option value="CA">CA</option>
+            <option value="CO">CO</option>
+            <option value="CT">CT</option>
+            <option value="DE">DE</option>
+            <option value="DC">DC</option>
+            <option value="FL">FL</option>
+            <option value="GA">GA</option>
+            <option value="HI">HI</option>
+            <option value="ID">ID</option>
+            <option value="IL">IL</option>
+            <option value="IN">IN</option>
+            <option value="IA">IA</option>
+            <option value="KS">KS</option>
+            <option value="KY">KY</option>
+            <option value="LA">LA</option>
+            <option value="ME">ME</option>
+            <option value="MD">MD</option>
+            <option value="MA">MA</option>
+            <option value="MI">MI</option>
+            <option value="MN">MN</option>
+            <option value="MS">MS</option>
+            <option value="MO">MO</option>
+            <option value="MT">MT</option>
+            <option value="NE">NE</option>
+            <option value="NV">NV</option>
+            <option value="NH">NH</option>
+            <option value="NJ">NJ</option>
+            <option value="NM">NM</option>
+            <option value="NY">NY</option>
+            <option value="NC">NC</option>
+            <option value="ND">ND</option>
+            <option value="OH">OH</option>
+            <option value="OK">OK</option>
+            <option value="OR">OR</option>
+            <option value="PA">PA</option>
+            <option value="RI">RI</option>
+            <option value="SC">SC</option>
+            <option value="SD">SD</option>
+            <option value="TN">TN</option>
+            <option value="TX">TX</option>
+            <option value="UT">UT</option>
+            <option value="VT">VT</option>
+            <option value="VA">VA</option>
+            <option value="WA">WA</option>
+            <option value="WV">WV</option>
+            <option value="WI">WI</option>
+            <option value="WY">WY</option>
+        </select>
+        </div><br><br><br><br><br /><br /><br />
+        
+            <div class="col-xs-4">
+    	<label for="subHomePhone">Home Phone:</label>
+        <input type="tel" class="form-control" id="subHomePhone" name="subject home phone" placeholder="1-615-555-5555">
+    </div>
+     <div class="col-xs-4">
+    	<label for="subHomePhone">Cell Phone:</label>
+        <input type="tel" class="form-control" id="subCellPhone" name="subject home phone" placeholder="1-615-555-5555">
+    </div><br /><br /><br />
+     <div class="col-xs-4">
+    	<label for="subHomePhone">Work Phone:</label>
+        <input type="tel" class="form-control" id="subWorkPhone" name="subject home phone" placeholder="1-615-555-5555">
+    </div><br /><br /><br /><br />
+        
+        <label>Parks Vehicle</label>
+    <div class="radio">
+     	<label><input type="radio" name="options">Garage</label>
+     	<label><input type="radio" name="options">Driveway</label>      
+    </div>
+       <label>Location</label>
+    <div class="radio">
+     	<label><input type="radio" name="options">Front of House</label>
+     	<label><input type="radio" name="options">Side of House</label>
+        <label><input type="radio" name="options">Back of House</label>      
+    </div>
+    
+    <div class="col-xs-4">
+     	<label for="subVTag">Vehicle Tag #:</label>
+    	<input type="text" class="form-control" id="subVTag" name="subject vehicle tag number">
+    </div>
+    <div class="col-xs-4">
+    	<label for="subVMake">Vehicle Make:</label>
+        <input type="text" class="form-control" id="subVMake" name="subject vehicle make">
+    </div>
+    <div class="col-xs-4">
+    	<label for="subVModel">Vehicle Model:</label>
+        <input type="text" class="form-control" id="subVModel" name="subject vehicle model">
+    </div>
+    <div class="col-xs-4">
+    	<label for="subVColor">Vehicle color:</label>
+        <input type="text" class="form-control" id="subVColor" name="subject vehicle color">
+    </div>
+    <div class="col-xs-12">
+    	<label for="subVMisc">Dents, Damage, Stickers, etc.</label>
+        <input type="text" class="form-control" id="subVMisc" name="subject vehiclle dents, damage, stickers, etc.">
+    </div><br /><br /><br /><br /><br />
+    
+    <div class="form-group">
+      	<label for="warning">Warnings</label>
+      	<textarea name="message" class="form-control" rows="4" id="warning" placeholder="Ex. Nosey neighbor, hidden driveway, subject is suspicious, subject carries mace or other type of weapon."></textarea>
+    </div>	
+
+<a href="#AddVehicle" class="btn btn-default" data-toggle="collapse">Add Vehicle</a>
+<div id="AddVehicle" class="collapse">
+      <div class="col-xs-4">
+     	<label for="subVTag2">Vehicle Tag #:</label>
+    	<input type="text" class="form-control" id="subVTag2" name="subject vehicle tag number">
+    </div>
+    <div class="col-xs-4">
+    	<label for="subVMake2">Vehicle Make:</label>
+        <input type="text" class="form-control" id="subVMake2" name="subject vehicle make">
+    </div>
+    <div class="col-xs-4">
+    	<label for="subVModel2">Vehicle Model:</label>
+        <input type="text" class="form-control" id="subVModel2" name="subject vehicle model">
+    </div>
+    <div class="col-xs-4">
+    	<label for="subVColor2">Vehicle color:</label>
+        <input type="text" class="form-control" id="subVColor2" name="subject vehicle color">
+    </div>
+    <div class="col-xs-12">
+    	<label for="subVMisc2">Dents, Damage, Stickers, etc.</label>
+        <input type="text" class="form-control" id="subVMisc2" name="subject vehiclle dents, damage, stickers, etc.">
+        
+        <!--add another vehicle nested-->
+        <a href="#AddVehicle3" class="btn btn-default" data-toggle="collapse">Add Vehicle</a>
+<div id="AddVehicle3" class="collapse">
+      <div class="col-xs-4">
+     	<label for="subVTag3">Vehicle Tag #:</label>
+    	<input type="text" class="form-control" id="subVTag3" name="subject vehicle tag number">
+    </div>
+    <div class="col-xs-4">
+    	<label for="subVMake3">Vehicle Make:</label>
+        <input type="text" class="form-control" id="subVMake3" name="subject vehicle make">
+    </div>
+    <div class="col-xs-4">
+    	<label for="subVModel3">Vehicle Model:</label>
+        <input type="text" class="form-control" id="subVModel3" name="subject vehicle model">
+    </div>
+    <div class="col-xs-4">
+    	<label for="subVColor3">Vehicle color:</label>
+        <input type="text" class="form-control" id="subVColor3" name="subject vehicle color">
+    </div>
+    <div class="col-xs-12">
+    	<label for="subVMisc3">Dents, Damage, Stickers, etc.</label>
+        <input type="text" class="form-control" id="subVMisc3" name="subject vehiclle dents, damage, stickers, etc.">
+    </div><br /><br /><br /><br /><br />
+</div>
+    </div><br /><br /><br /><br /><br />
+</div><br /><br />
+<!--physical appearence-->
+	<label>Physical Appearence</label><br /><br />
+     <label>Gender</label>
+    <div class="radio">
+     	<label><input type="radio" name="female" id="subFemale">Female</label>
+     	<label><input type="radio" name="male" id="subMale">Male</label>      
+    </div>
+    <div class="col-xs-2">
+    	<label for="subjectAge">Age</label>
+        <input type="number" class="form-control" id="subjectAge" name="subject age">
+    </div>
+    <div class="col-xs-2">
+    	<label for="subjectHeight">Height</label>
+        <input type="text" class="form-control" id="subjectHeight" name="subject height">
+    </div>
+    <div class="col-xs-3">
+    	<label for="subjectWeight">Weight</label>
+        <input type="number" class="form-control" id="subjectWeight" name="subject weight">
+    </div><br /><br /><br /><br />
+    
+     <label>Hair Color:</label>
+    <div class="checkbox">
+    	<label><input type="checkbox" value="">Brown</label>
+        <label><input type="checkbox" value="">Black</label>
+        <label><input type="checkbox" value="">Blonde</label>
+        <label><input type="checkbox" value="">Red</label>
+        <label><input type="checkbox" value="">None; Bald</label>
+     	<br />
+        <label><input type="checkbox" value="">Other: Please Specify</label><br />
+        <div class="col-xs-4">
+  		<input class="form-control" id="subHairColor" type="text">
+		</div>
+     </div><br><br>
+         <label>Hair Length:</label>
+    <div class="checkbox">
+    	<label><input type="checkbox" value="">Bald</label>
+        <label><input type="checkbox" value="">Buzzed</label>
+        <label><input type="checkbox" value="">Very Short</label>
+        <label><input type="checkbox" value="">Short</label>
+        <label><input type="checkbox" value="">Medium (Shoulder-length)</label>
+        <label><input type="checkbox" value="">Long</label>
+        <label><input type="checkbox" value="">Very Long (Past mid-back)</label>
+     	<br />
+        <label><input type="checkbox" value="">Other: Please Specify</label><br />
+        <div class="col-xs-4">
+  		<input class="form-control" id="subHairColor" type="text">
+		</div>
+     </div><br><br>
+     
+     <div class="col-xs-10">
+     	<label for="subHairStyle">Hairstyle:</label>
+        <input type="text" class="form-control" id="subHairStyle" name="subject hairstyle">
+     </div>
+      <div class="col-xs-10">
+     	<label for="subFaceHair">Facial Hair:</label>
+        <input type="text" class="form-control" id="subFaceHair" name="subject facial hair">
+     </div>
+      <div class="col-xs-10">
+     	<label for="subTats">Tattoos:</label>
+        <input type="text" class="form-control" id="subTats" name="subject tattoos">
+     </div>
+     <div class="col-xs-10">
+     	<label for="subScars">Scars:</label>
+        <input type="text" class="form-control" id="subScars" name="subject scars">
+     </div>
+     <div class="col-xs-12">
+     	<label for="subTemp">Temperament:</label>
+        <input type="text" class="form-control" id="subTemp" name="subject temperament" placeholder="Paranoid, violent, easy-going, etc.">
+     </div><br /><br /><br /><br />
+     
+     <label>Smokes</label>
+    <div class="radio">
+     	<label><input type="radio" name="smokes">Yes</label>
+     	<label><input type="radio" name="noSmoke">No</label>      
+    </div><br /><br />
+    
+    <label>Drinks</label>
+    <div class="radio">
+     	<label><input type="radio" name="drinks">Yes</label>
+     	<label><input type="radio" name="noDrink">No</label>      
+    </div><br /><br /><br /><br /><br />
+     
+    <a href="#subWorkout" class="btn btn-default" data-toggle="collapse">Click Here To Tell Us Where Subject Works Out</a>
+<div id="subWorkout" class="collapse">
+    <div class="col-xs-4">
+    	<label for="subWorkoutLoc">Workout Locations:</label>
+        <input type="text" id="subWorkoutLoc" name="subject workout location">
+    </div>
+     <div class="col-xs-4">
+    	<label for="subWorkoutTime">Workout Times:</label>
+        <input type="text" id="subWorkoutTime" name="subject workout time">
+    </div>
+</div><br /><br /> 
+
+<a href="#subShops" class="btn btn-default" data-toggle="collapse">Click Here To Tell Us Where Subject Shops &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </a>
+<div id="subShops" class="collapse">
+	<div class="col-xs-4">
+    <label for="subShops">Shopping Locations:</label>
+        <input type="text" id="subShop" name="subject shopping location">
+    </div>
+     <div class="col-xs-4">
+    	<label for="subShopTime">Shopping Times:</label>
+        <input type="text" id="subShopTime" name="subject shopping time">
+      </div>
+</div><br /><br /> 
+
+<a href="#subEats" class="btn btn-default" data-toggle="collapse">Click Here To Tell Us Where Subject Eats Out &nbsp;&nbsp;</a>
+<div id="subEats" class="collapse">
+	 <div class="col-xs-4">
+    	<label for="subEatLoc">Eating Out Locations:</label>
+        <input type="text" id="subEatLoc" name="subject eating out location">
+    </div>
+     <div class="col-xs-4">
+    	<label for="subEatTime">Eating Out Times:</label>
+        <input type="text" id="subEatTime" name="subject eating out time">
+      </div>
+</div><br /><br />
+
+<a href="#subHangs" class="btn btn-default" data-toggle="collapse">Click Here To Tell Us Where Subject Hangs Out</a>
+<div id="subHangs" class="collapse"><br />
+    <div class="col-xs-4">
+    	<label for="subHangLoc">Hang Out Locations:</label>
+        <input type="text" id="subHangLoc" name="subject first hang out location">
+    </div>
+     <div class="col-xs-4">
+    	<label for="subHangTime">Hang Out Times:</label>
+        <input type="text" id="subHangTime" name="subject first hang out time">
+      </div><br /><br />
+    
+    <a href="#subHangs2" class="btn btn-default" data-toggle="collapse">Click Here To Tell Us Where Subject Hangs Out</a>
+		<div id="subHangs2" class="collapse"><br />
+    
+    		<div class="col-xs-4">
+    			<label for="subHangLoc2">Hang Out Locations:</label>
+        		<input type="text" id="subHangLoc2" name="subject second hang out location">
+    	</div>
+     	<div class="col-xs-4">
+    		<label for="subHangTime2">Hang Out Times:</label>
+        	<input type="text" id="subHangTime2" name="subject second hang out time">
+      	</div><br /><br />
+    
+    		<a href="#subHangs3" class="btn btn-default" data-toggle="collapse">Click Here To Tell Us Where Subject Hangs Out</a><br />
+				<div id="subHangs3" class="collapse"><br />
+   						<div class="col-xs-4">
+    						<label for="subHangLoc3">Hang Out Locations:</label>
+        					<input type="text" id="subHangLoc3" name="subject third hang out location">
+    					</div>
+     					<div class="col-xs-4">
+    						<label for="subHangTime3">Hang Out Times:</label>
+        					<input type="text" id="subHangTime3" name="subject third hang out time">
+      					</div>
+   
+				</div><br /><br /><br /><br /><br /><br /><br /><br /><br />
+	</div><br /><br /><br /><br /><br /><br /><br />
+    <!--end hang out-->
+</div> <br /><br /><br /><br /><br /><br /><br /><br /><br />
+	
+
+<div class="form-group">
+	<label for="subImage1">Image of Subject</label>
+    <input type="file" class="file" id="subImage1" name="first image of subject">
+</div>
+<div class="form-group">
+	<label for="subImage2">Image of Subject</label>
+    <input type="file" class="file" id="subImage2" name="second image of subject">
+</div>
+
+<!--begin children-->
+<a href="#childToggle" class="btn btn-default" data-toggle="collapse">Click Here To Add Children</a>
+		<div id="childToggle" class="collapse">
+    <div class="form-group">
+    	<label for="school">School or Child Care Facility</label>
+        <input type="text" class="form-control" id="school" name="subject child school or child care">
+    </div>
+    <div class="form-group">
+        <label for="dropTime">Drop Off Time</label>
+        <input type="time" class="form-control" id="dropTime" name="subject child drop off time">
+    </div>
+    <div class="form-group">
+        <label for="pickTime">Pick Up Time</label>
+        <input type="time" class="form-control" id="pickTime" name="subject child pick up time">
+    </div>
+        
+        <a href="#childToggle2" class="btn btn-default" data-toggle="collapse">Click Here To Add Children</a>
+		<div id="childToggle2" class="collapse">
+    <div class="form-group">
+    	<label for="school2">School or Child Care Facility</label>
+        <input type="text" class="form-control" id="school2" name="subject second child school or child care">
+    </div>
+    <div class="form-group">
+        <label for="dropTime2">Drop Off Time</label>
+        <input type="time" class="form-control" id="dropTime2" name="subject second child drop off time">
+    </div>
+    <div class="form-group">
+        <label for="pickTime2">Pick Up Time</label>
+        <input type="time" class="form-control" id="pickTime2" name="subject second child pick up time">
+    </div>
+    			<a href="#childToggle3" class="btn btn-default" data-toggle="collapse">Click Here To Add Children</a>
+			<div id="childToggle3" class="collapse">
+    	<div class="form-group">
+    		<label for="school3">School or Child Care Facility</label>
+        	<input type="text" class="form-control" id="school3" name="subject child school or child care">
+    	</div>
+    	<div class="form-group">
+        	<label for="dropTime3">Drop Off Time</label>
+        	<input type="time" class="form-control" id="dropTime3" name="subject child drop off time">
+    	</div>
+    	<div class="form-group">
+        	<label for="pickTime3">Pick Up Time</label>
+        	<input type="time" class="form-control" id="pickTime3" name="subject child pick up time">
+    	</div>
+        		
+                	<a href="#childToggle4" class="btn btn-default" data-toggle="collapse">Click Here To Add Children</a>
+				<div id="childToggle4" class="collapse">
+    		<div class="form-group">
+    			<label for="school4">School or Child Care Facility</label>
+        		<input type="text" class="form-control" id="school4" name="subject child school or child care">
+    		</div>
+    		<div class="form-group">
+        		<label for="dropTime4">Drop Off Time</label>
+        		<input type="time" class="form-control" id="dropTime4" name="subject child drop off time">
+    		</div>
+    		<div class="form-group">
+        		<label for="pickTime4">Pick Up Time</label>
+        		<input type="time" class="form-control" id="pickTime4" name="subject child pick up time">
+    		</div>
+            
+            		<a href="#childToggle5" class="btn btn-default" data-toggle="collapse">Click Here To Add Children</a>
+					<div id="childToggle5" class="collapse">
+    			<div class="form-group">
+    				<label for="school5">School or Child Care Facility</label>
+        			<input type="text" class="form-control" id="school5" name="subject child school or child care">
+    			</div>
+    			<div class="form-group">
+        			<label for="dropTime5">Drop Off Time</label>
+        			<input type="time" class="form-control" id="dropTime5" name="subject child drop off time">
+    			</div>
+    			<div class="form-group">
+        			<label for="pickTime5">Pick Up Time</label>
+        			<input type="time" class="form-control" id="pickTime5" name="subject child pick up time">
+    			</div>
+        
+        		<!--fifth child end-->
+				</div>
+        
+        	<!--fourth child end-->
+			</div> 
+        
+        <!--third child end-->
+		</div> 
+    	
+   <!--second child end--> 	
+   </div> 
+ <!--first child end-->       
+</div> 
+
+<!--end children-->
+
+<!--begin relationships-->
+<p>Please fill out a person record for anyone relating to the subject.  This includes roommates, children, coworkers, friends, associates, family members the subject tends to visit, etc.  The more we know about the subject's behaviors and those he or she visits frequently, the more we will be able to help.</p><br /><br />
+
+<div class="form-group" id="relationshipRepeat">
+     	<div class="form-group">
+     		<label for="selectList">Type of Relationship:</label>
+        	<select class="form-control" id="selectList">
+        		<option>Child</option>
+            	<option>Significant Other</option>
+                <option>Roommate</option>
+            	<option>Friend</option>
+            	<option>Associate</option>
+                <option>Coworker</option>
+                <option>Immediate Family</option>
+                <option>Exnteded Family</option>
+         	</select>
+      	</div>
+        
+        <div class="col-xs-4">
+    	<label for="relationshipFirstName_1">First Name:</label>
+        <input type="name" class="form-control" id="relationshipFirstName_1" name="relationshipFirstName_1">
+    </div>
+    <div class="col-xs-4">
+    	<label for="relationshipLastName_1">Last Name:</label>
+        <input type="name" class="form-control" id="relationshipLastName_1" name="relationshipLastName_1">
+    </div>
+  	 <div class="col-xs-4">
+    	<label for="relationshipDOB_1">Date of Birth (if known):</label>
+        <input type="date" class="form-control" id="relationshipDOB_1" name="relationshipDOB_1"><br />
+    </div>
+      <label>Type of Residence:</label>
+    <span class="help-block">Check all that apply</span>
+    <div class="checkbox">
+    	<label><input type="checkbox" value="">Condo</label>
+        <label><input type="checkbox" value="">House</label>
+        <label><input type="checkbox" value="">City</label>
+        <label><input type="checkbox" value="">Rural</label>
+        <label><input type="checkbox" value="">Culdesac</label>
+        <label><input type="checkbox" value="">Apartment</label>
+        <label><input type="checkbox" value="">Gated</label>
+     	<br />
+        <label><input type="checkbox" value="">Other: Please Specify</label><br />
+        <div class="col-xs-4">
+  		<input class="form-control" id="otherCasetype" type="text">
+		</div>
+     </div><br><br>
+ 	<div class="form-group">
+    	<label for="relationshipAdd_1">Address Line 1:</label>
+        <input type="text" class="form-control" id="relationshipAdd_1" name="relationshipAdd_1">
+    </div>
+    <div class="form-group">
+    	<label for="relationshipAdd2">Address Line 2:</label>
+        <input type="text" class="form-control" id="relatioinshipAdd2" name="relationshipAdd_2">
+    </div>
+    <div class="col-xs-4">
+    	<label for="relationshipCity_1">City:</label>
+        <input type="text" class="form-control" id="relationshipCity_1" name="relationshipCity_1">
+    </div>
+    <div class="col-xs-4">
+    	<label for"relationshipZip_1">Zip Code</label>
+        <input type="number" class="form-control" id="relationshipZip_1" name="relationshipZip_1">
+    </div>
+    
+<!--state picker!-->
+
+ <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <label for="relationshipState_1">State:</label><br/>
+        <select name="relationshipState_1" class="form-control" id="relationshipState_1">
+            <option value="AL">AL</option>
+            <option value="AK">AK</option>
+            <option value="AZ">AZ</option>
+            <option value="AR">AR</option>
+            <option value="CA">CA</option>
+            <option value="CO">CO</option>
+            <option value="CT">CT</option>
+            <option value="DE">DE</option>
+            <option value="DC">DC</option>
+            <option value="FL">FL</option>
+            <option value="GA">GA</option>
+            <option value="HI">HI</option>
+            <option value="ID">ID</option>
+            <option value="IL">IL</option>
+            <option value="IN">IN</option>
+            <option value="IA">IA</option>
+            <option value="KS">KS</option>
+            <option value="KY">KY</option>
+            <option value="LA">LA</option>
+            <option value="ME">ME</option>
+            <option value="MD">MD</option>
+            <option value="MA">MA</option>
+            <option value="MI">MI</option>
+            <option value="MN">MN</option>
+            <option value="MS">MS</option>
+            <option value="MO">MO</option>
+            <option value="MT">MT</option>
+            <option value="NE">NE</option>
+            <option value="NV">NV</option>
+            <option value="NH">NH</option>
+            <option value="NJ">NJ</option>
+            <option value="NM">NM</option>
+            <option value="NY">NY</option>
+            <option value="NC">NC</option>
+            <option value="ND">ND</option>
+            <option value="OH">OH</option>
+            <option value="OK">OK</option>
+            <option value="OR">OR</option>
+            <option value="PA">PA</option>
+            <option value="RI">RI</option>
+            <option value="SC">SC</option>
+            <option value="SD">SD</option>
+            <option value="TN">TN</option>
+            <option value="TX">TX</option>
+            <option value="UT">UT</option>
+            <option value="VT">VT</option>
+            <option value="VA">VA</option>
+            <option value="WA">WA</option>
+            <option value="WV">WV</option>
+            <option value="WI">WI</option>
+            <option value="WY">WY</option>
+        </select>
+        
+        
+         <div class="form-group">
+      	<label for="relationshipWarning_1">Warnings</label>
+      	<textarea name="relationshipWarning_1" class="form-control" rows="4" id="relationshipWarning_1" placeholder="Ex. Nosey neighbor, hidden driveway, subject is suspicious, subject carries mace or other type of weapon."></textarea>
+    </div>	
+
+      <div class="col-xs-4">
+     	<label for="relationshipVTag1_1">Vehicle Tag #:</label>
+    	<input type="text" class="form-control" id="relationshipVTag1_1" name="relationshipVTag1_1">
+    </div>
+    <div class="col-xs-4">
+    	<label for="relationshipVMake1_1">Vehicle Make:</label>
+        <input type="text" class="form-control" id="relationshipVMake1_1" name="relationshipVMake1_1">
+    </div>
+    <div class="col-xs-4">
+    	<label for="relationshipVModel1_1">Vehicle Model:</label>
+        <input type="text" class="form-control" id="relationshipVModel1_1" name="relationshipVModel1_1">
+    </div>
+    <div class="col-xs-4">
+    	<label for="relationshipVColor1_1">Vehicle color:</label>
+        <input type="text" class="form-control" id="relationshipVColor1_1" name="relationshipVColor1_1">
+    </div>
+    <div class="col-xs-12">
+    	<label for="relationshipVMisc1_1">Dents, Damage, Stickers, etc.</label>
+        <input type="text" class="form-control" id="relationshipVMisc1_1" name="relationshipVMisc1_1">
+        
+        <!--add another vehicle nested-->
+        <a href="#AddVehicleR" class="btn btn-default" data-toggle="collapse">Add Vehicle</a>
+<div id="AddVehicleR" class="collapse">
+      <div class="col-xs-4">
+     	<label for="relationshipVTag2_1">Vehicle Tag #:</label>
+    	<input type="text" class="form-control" id="relationshipVTag2_1" name="relationshipVTag2_1">
+    </div>
+    <div class="col-xs-4">
+    	<label for="relationshipVMake2_1">Vehicle Make:</label>
+        <input type="text" class="form-control" id="relationshipVMake2_1" name="relationshipVMake2_1">
+    </div>
+    <div class="col-xs-4">
+    	<label for="relationshipVModel2_1">Vehicle Model:</label>
+        <input type="text" class="form-control" id="relationshipVModel2_1" name="relationshipVModel2_1">
+    </div>
+    <div class="col-xs-4">
+    	<label for="relationshipVColor2_1">Vehicle color:</label>
+        <input type="text" class="form-control" id="relationshipVColor2_1" name="relationshipVColor2_1">
+    </div>
+    <div class="col-xs-12">
+    	<label for="relationshipVMisc2_1">Dents, Damage, Stickers, etc.</label>
+        <input type="text" class="form-control" id="relationshipVMisc2_1" name="relationshipVMisc2_1">
+    </div><br /><br /><br /><br /><br />
+</div>
+    </div><br /><br /><br /><br /><br />
+</div><br /><br /><br /><br /><br /><br /><br /><br />
+<br /><br /><br /><br /><br />
+</div><br /><br /><br /><br /><br /><br /><br /><br />
+<!--physical appearence--><br /><br />
+	<label>Physical Appearence</label><br /><br />
+     <label>Gender</label>
+    <div class="radio">
+     	<label><input type="radio" name="female_1" id="relationshipGender_1">Female</label>
+     	<label><input type="radio" name="male_1" id="relationshipGender_1">Male</label>      
+    </div>
+    <div class="col-xs-2">
+    	<label for="relationshipAge_1">Age</label>
+        <input type="number" class="form-control" id="relationshipAge_1" name="relationshipAge_1">
+    </div>
+    <div class="col-xs-2">
+    	<label for="subjectHeight">Height</label>
+        <input type="text" class="form-control" id="subjectHeight" name="subject height">
+    </div>
+    <div class="col-xs-3">
+    	<label for="relationshipWeight_1">Weight</label>
+        <input type="number" class="form-control" id="relationshipWeight_1" name="relationshipWeight_1">
+    </div><br /><br /><br /><br />
+    
+     <label>Hair Color:</label>
+    <div class="checkbox">
+    	<label><input type="checkbox" value="">Brown</label>
+        <label><input type="checkbox" value="">Black</label>
+        <label><input type="checkbox" value="">Blonde</label>
+        <label><input type="checkbox" value="">Red</label>
+        <label><input type="checkbox" value="">None; Bald</label>
+     	<br />
+        <label><input type="checkbox" value="">Other: Please Specify</label><br />
+        <div class="col-xs-4">
+  		<input class="form-control" id="relationshipHairColor_1" type="text" name="relationshipHairColor_1">
+		</div>
+     </div><br><br>
+         <label>Hair Length:</label>
+    <div class="checkbox">
+    	<label><input type="checkbox" value="">Bald</label>
+        <label><input type="checkbox" value="">Buzzed</label>
+        <label><input type="checkbox" value="">Very Short</label>
+        <label><input type="checkbox" value="">Short</label>
+        <label><input type="checkbox" value="">Medium (Shoulder-length)</label>
+        <label><input type="checkbox" value="">Long</label>
+        <label><input type="checkbox" value="">Very Long (Past mid-back)</label>
+     	<br />
+        <label><input type="checkbox" value="">Other: Please Specify</label><br />
+        <div class="col-xs-4">
+  		<input class="form-control" id="relationshipHairLength_1" type="text" name="relationshipHairLength_1">
+		</div>
+     </div><br><br>
+     
+     <div class="col-xs-10">
+     	<label for="relationshipHairStyle">Hairstyle:</label>
+        <input type="text" class="form-control" id="relationshipHairStyle" name="relationshipHairStyle">
+     </div>
+      <div class="col-xs-10">
+     	<label for="relationshipFaceHair_1">Facial Hair:</label>
+        <input type="text" class="form-control" id="relationshipFaceHair_1" name="relationshipFaceHair_1">
+     </div>
+      <div class="col-xs-10">
+     	<label for="relationshipTats_1">Tattoos:</label>
+        <input type="text" class="form-control" id="relationshipTats_1" name="relationshipTats_1">
+     </div>
+     <div class="col-xs-10">
+     	<label for="relationshipScars_1">Scars:</label>
+        <input type="text" class="form-control" id="relationshipScars_1" name="relationshipScars_1">
+     </div>
+     <div class="col-xs-12">
+     	<label for="relationshipTemp_1">Temperament/Additional Information:</label>
+        <input type="text" class="form-control" id="relationshipTemp_1" name="relationshipTemp_1" placeholder="Paranoid, violent, easy-going, this is subject's best friend, this is subject's cousin, etc.">
+     </div><br /><br />
+     
+     <label>Smokes</label>
+    <div class="radio">
+     	<label><input type="radio" name="relationshipSmokes_1">Yes</label>
+     	<label><input type="radio" name="relationshipNoSmoke_1">No</label>      
+    </div><br /><br />
+    
+    <label>Drinks</label>
+    <div class="radio">
+     	<label><input type="radio" name="relationshipDrinks_1">Yes</label>
+     	<label><input type="radio" name="relationshipNoDrink_1">No</label>      
+    </div><br /><br /><br /><br /><br />
+    
+    <div class="form-group">
+	<label for="relationshipImage1_1">Image of Person</label>
+    <input type="file" class="file" id="relationshipImage1_1" name="relationshipImage1_1">
+</div>
+<div class="form-group">
+	<label for="relationshipImage2_1">Image of Person</label>
+    <input type="file" class="file" id="relationshipImage2_1" name="relationshipImage2_1">
+</div><br /><br /><br /><br /><br />
+        
+        
+        
+        
+        <a href="#addRelationships" class="btn btn-default addRelationship" data-toggle="collapse">Click Here To Add a Relationship</a>
+<!--end repeated-->      
+</div>
+
+<!--script for repeating form-->
+<script>
+$('.addRelationship').click(function(){
+    var currentCount =  $('#relationshipRepeat').length;
+    var newCount = currentCount+1;
+    var lastRepeatingGroup = $('#relationshipRepeat').last();
+    var newSection = lastRepeatingGroup.clone();
+    newSection.insertAfter(lastRepeatingGroup);
+    newSection.find("input").each(function (index, input) {
+        input.id = input.id.replace("_" + currentCount, "_" + newCount);
+        input.name = input.name.replace("_" + currentCount, "_" + newCount);
+    });
+	newSection.find("select").each(function (index, input) {
+        input.id = input.id.replace("_" + currentCount, "_" + newCount);
+        input.name = input.name.replace("_" + currentCount, "_" + newCount);
+    });
+    newSection.find("label").each(function (index, label) {
+        var l = $(label);
+        l.attr('for', l.attr('for').replace("_" + currentCount, "_" + newCount));
+    });
+    return false;
+});
+
+</script>
+<br /><br />
+
+       
+    <button type="submit" class="btn btn-primary" value="Submit" name="submit" id="sendmsg">Send Message</button>
+    
+</form>
+  
+  
+  
+
+</div>
+      </div>
+      
+      
+      <hr class="featurette-divider">
+
+      
+	</div> <!-- /container -->
+  <!-- FOOTER -->
+      <footer class="footer">
+      	<div class="container">
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p><br />&copy; 2015 AARON Investigation <a href="tel:615-573-5095">615-573-5095</a></p>
+        </div>
+      </footer>
+      
+  <!--  </div> <!-- /container --> 
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+</body>
+</html>
