@@ -10,7 +10,7 @@
     <meta name="author" content="">
     <link rel="icon" href="favicon.ico">
 
-    <title>Form</title>
+    <title>Login</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.minC.css" rel="stylesheet">
@@ -71,54 +71,19 @@
       <div class="jumbotron"><a name="Background"></a>
         <h1>Form Heading</h1>
         <div class="container">
-  <h2>More text</h2> 
     
 <form role="form" method="POST" id="msgform">
 
     <div class="form-group">
-      	<label for="first_name">First Name</label>
-      	<input type="name" class="form-control" id="name"  name="first_name" placeholder="Ex. John">
+      	<label for="first_name">Username</label>
+      	<input type="name" class="form-control" id="username"  name="username" placeholder="Username">
       </div>
       <div class="form-group">
-      	<label for="first_name">Last Name</label>
-      	<input type="name" class="form-control" id="name"  name="last_name" placeholder="Ex. Doe">
+      	<label for="password">Password</label>
+      	<input type="password" class="form-control" id="password"  name="password" placeholder="">
     </div>
-    <div class="form-group">
-      	<label for="email">Email</label>
-      	<input type="email" class="form-control" id="email" name="email" placeholder="Ex. john.doe@gmail.com">
-    </div>
-    <div class="form-group">
-      	<label for="pw">Password</label>
-      	<input type="password" class="form-control" id="pw" name="password">
-    </div>
-    <div class="form-group">
-      	<label for="msg">Message</label>
-      	<textarea name="message" class="form-control" rows="8" id="msg" placeholder="Hi, I think you're nice."></textarea>
-    </div>
-    <p>Here are some checkboxes</p>
-    <div class="checkbox">
-    	<label><input type="checkbox" value="">First</label>
-        <label><input type="checkbox" value="">Second</label>
-        <label><input type="checkbox" value="">Third</label>
-     </div>
-     <p>Radio buttons</p>
-     <div class="radio">
-     	<label><input type="radio" name="options">First</label>
-        <label><input type="radio" name="options">Or second</label>
-        <label><input type="radio" name="options">Or third</label>
-     </div>
-     <p>Select List</p>
-     <div class="form-group">
-     	<label for="selectList">Select One:</label>
-        <select class="form-control" id="selectList">
-        	<option>This one</option>
-            <option>This one</option>
-            <option>This one</option>
-            <option>Or this one</option>
-         </select>
-      </div>
-       
-    <button type="submit" class="btn btn-primary" value="Submit" name="submit" id="sendmsg">Send Message</button>
+    
+    <button type="submit" class="btn btn-primary" value="Submit" name="submit" id="sendmsg">Sign In</button>
     
 </form>
   
